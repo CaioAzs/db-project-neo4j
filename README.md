@@ -1,6 +1,10 @@
-## Projeto de Banco de Dados - Neo4j
+# Banco de Dados - NEO4J
 
-## Descrição das Coleções Usadas para Armazenar os Dados
+---
+Caio de Souza Conceição - RA: 22.122.033-8 <br>
+Lucas Dias Batista - RA: 22.122.065-0
+
+---
 
 Este projeto utiliza o **Neo4j**, para modelar um modelo básico de faculdade. As coleções principais usadas para armazenar os dados são:
 
@@ -70,10 +74,6 @@ MATCH (a:Aluno)-[:PERTENCE_AO_GRUPO]->(t:TCC)<-[:ORIENTA]-(p:Professor)
 RETURN a.id AS aluno_id, a.nome AS aluno_nome, p.id AS professor_id, p.nome AS orientador, t.titulo as titulo;
 ```
 
-### Integrantes do Grupo
-
-Caio de Souza Conceição — RA: 22.122.033-8 <br>
-Lucas Dias Batista — RA: 22.122.065-0
 
 ### Como Executar o Código e Validar as Queries
 
@@ -88,7 +88,6 @@ Lucas Dias Batista — RA: 22.122.065-0
      ```
 
 3. **Executar o Código**:
-   - Execute o script Python que contém o código de inserção de dados e exemplo de queries:
      ```
      python main.py
      ```
